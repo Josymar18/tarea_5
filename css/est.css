@@ -1,0 +1,93 @@
+.padre
+{
+    padding: 20px;
+    background-color: #c6c6c6;
+    grid-gap: 15px;
+    display: grid;
+    grid: template columns 2fr 2fr 2fr;
+    grid-template-areas: "header heade headerr"
+                         "nav    nav   nav"
+                         "cont1  cont2 cont3"
+                         "foot   foot  cont3"
+                         "dep    dep   dep"
+                         "dep1   dep1  dep1"
+                         "dep2   dep2  dep2";
+}
+
+.nav
+{
+    position: sticky;
+    top: 0;
+}
+.padre .header
+{
+    grid-area: header ;
+}
+.padre .nav
+{
+    grid-area: nav ;
+    
+
+}
+.padre .cont1
+{
+    grid-area:cont1 ;
+}
+.padre .cont2
+{
+    grid-area: cont2 ;
+}.padre .cont3
+{
+    grid-area: cont3 ;
+}.padre .foot
+{
+    grid-area:foot ;
+}
+
+
+
+
+@media screen and (max-width:768px)
+{
+.padre{
+    background-color: #706F6F;
+    font-family: 'Courier New', Courier, monospace;
+    grid-template-areas: "header  header header"
+                         "nav     nav    nav"
+                         "cont1   cont1  cont1   "
+                         "cont2   cont2  cont3 "
+                         "foot    foot   foot";
+}
+.header
+{
+    color: white;
+}
+.nav
+{
+    position: sticky;
+    top: 0;
+}
+}
+@media screen and (max-width:500px)
+{
+.padre{
+    background-color: #D2DAED;
+    font-family: 'Courier New', Courier, monospace;
+    grid-template-areas: "header header header "
+                         "nav    nav    nav "
+                         "cont1  cont1  cont1"
+                         "cont2  cont2  cont2"
+                         "cont3  cont3  cont3 "
+                         "foot   foot   foot"
+                         ;
+}
+.nav
+{
+    position: sticky;
+    top: 0;
+}
+.header
+{
+    color: black;
+}
+}

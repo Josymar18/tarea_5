@@ -1,0 +1,69 @@
+.padre
+{
+    padding: 15px;
+    background-color: #29323e;
+    grid-gap: 15px;
+    display: grid;
+    grid: template columns 2fr 2fr 2fr;
+    grid-template-areas: "header heade headerr"
+                         "nav    nav   nav"
+                         "dep    dep   dep"
+                         "dep1   dep1  dep1"
+                         "dep2   dep2  dep2";
+}
+.nav
+{
+    position: sticky;
+    top: 10px;
+}
+
+.padre .header
+{
+    grid-area: header ;
+}
+.padre .nav
+{
+    grid-area: nav ;
+    
+
+}
+.padre .dep
+{
+    grid-area:dep ;
+}
+.padre .dep1
+{
+    grid-area:dep1 ;
+}
+
+@media screen and (max-width:768px)
+{
+.padre{
+    background-color: rgb(25, 45, 80);
+    font-family: 'Courier New', Courier, monospace;
+    grid-template-areas: "header  header header"
+                         "nav     nav    nav"
+                         "dep     dep    dep"
+                         "dep1    dep1   dep1"
+                         "dep2    dep2   dep2";
+}
+
+}
+@media screen and (max-width:500px)
+{
+.padre{
+    background-color: rgb(28, 188, 193);
+    font-family: 'Courier New', Courier, monospace;
+    grid-template-areas: "header header header "
+                         "nav    nav    nav "
+                         "dep     dep    dep"
+                         "dep1    dep1   dep1"
+                         "dep2    dep2   dep2"
+                         ;
+}
+
+}
+.padre .dep2
+{
+    grid-area:dep2 ;
+}

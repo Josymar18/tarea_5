@@ -1,0 +1,63 @@
+.padre{
+    padding: 20px;
+    background-color: #c6c6c6;
+    grid-gap: 15px;
+    display: grid;
+    grid: template columns 1fr 2fr ;
+    grid-template-areas: "header  header header"
+                         "nav     nav    nav"                        
+                         "cont3   card   card"
+                         ;
+}
+.padre .header
+{
+    grid-area: header ;
+}
+.padre .nav
+{
+    grid-area: nav ;
+    
+
+}
+.padre .cont1
+{
+    grid-area:cont1 ;
+}
+.padre .card
+{
+    grid-area: card ;
+}.padre .cont3
+{
+    grid-area: cont3 ;
+}.padre .foot
+{
+    grid-area:foot ;
+}
+
+@media screen and (max-width:768px)
+{
+.padre{
+    background-color: beige;
+    font-family: 'Courier New', Courier, monospace;
+    grid-template-areas: "header  header header"
+                         "nav     nav    nav"
+                         "cont3   cont3  cont3"
+                         "card    card   card"
+                         
+                         ;
+}
+
+}
+@media screen and (max-width:500px)
+{
+.padre{
+    background-color: #D2DAED;
+    font-family: 'Courier New', Courier, monospace;
+    grid-template-areas: "header header header "
+                         "nav    nav    nav "
+                         "cont3  cont3  cont3"
+                         "card   card   card"
+                         ;
+}
+
+}
